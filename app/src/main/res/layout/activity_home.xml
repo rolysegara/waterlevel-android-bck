@@ -1,0 +1,81 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="start">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_background_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_toolbar_1"/>
+
+        <ImageView
+            android:id="@+id/iv_background_toolbar_with_tab"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_toolbar_1"
+            android:visibility="gone"/>
+
+        <include
+            layout="@layout/app_bar_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:background="@drawable/bg_nav_bar">
+        <!--
+        app:headerLayout="@layout/layout_drawer_header"
+        app:menu="@menu/activity_main_drawer"
+        android:scrollIndicators="none"
+        android:layout_marginLeft="25dp">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_drawer_header" />
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scrollbars="vertical"
+                android:overScrollMode="never">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <include layout="@layout/layout_drawer_menu" />
+
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom" >
+                <include layout="@layout/layout_drawer_footer"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

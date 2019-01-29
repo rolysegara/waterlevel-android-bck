@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:id="@+id/ll_sensor">
+
+    <TextView
+        android:id="@+id/tv_sensor_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:textColor="#4D4D4D"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="@string/sensor_name"/>
+
+    <TextView
+        android:id="@+id/tv_level"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:textColor="#4D4D4D"
+        android:gravity="center"
+        android:text="@string/level"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/status"/>
+    </LinearLayout>
+
+</LinearLayout>

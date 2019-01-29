@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|bottom"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/ll_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ll_icon"
+        android:background="#f9f9f9"
+        android:padding="16dp">
+        <TextView
+            android:id="@+id/textViewTitleDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#636363"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:text="@string/cancel"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="16dp">
+
+        <LinearLayout
+            android:id="@+id/ic_camera"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_camera_toon"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp" />
+
+            <com.visionet.indigo_waterlevel.basecustomfonts.MyTextView_Roboto_Bold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#636363"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:paddingBottom="16dp"
+                android:text="@string/capture_photo"/>
+
+        </LinearLayout>
+        
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            android:background="#E0E0E0"/>
+
+        <LinearLayout
+            android:id="@+id/ic_album"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_gallery_toon"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"/>
+
+            <com.visionet.indigo_waterlevel.basecustomfonts.MyTextView_Roboto_Bold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#636363"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:paddingBottom="16dp"
+                android:text="@string/gallery_take_image"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

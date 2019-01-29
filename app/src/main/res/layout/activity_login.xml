@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        android:adjustViewBounds="false"
+        android:cropToPadding="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/water_level"
+        app:layout_constraintDimensionRatio="H,20:5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.visionet.indigo_waterlevel.basecustomfonts.MyTextView_Roboto_Regular
+        android:id="@+id/myTextView_Roboto_Regular2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Town Management Division"
+        android:textColor="#b7b8ba"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageLogo" />
+
+    <com.visionet.indigo_waterlevel.basecustomfonts.EditText_Roboto_Regular
+        android:id="@+id/edUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:background="#00000000"
+        android:hint="@string/hint_username"
+        android:inputType="text"
+        android:textColor="#000"
+        android:textColorHint="#A2A2A2"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:background="#acacac"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edUsername" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="48dp"
+        android:src="@drawable/ic_user"
+        app:layout_constraintBottom_toBottomOf="@+id/edUsername"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edUsername" />
+
+    <com.visionet.indigo_waterlevel.basecustomfonts.EditText_Roboto_Regular
+        android:id="@+id/edPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="32dp"
+        android:layout_weight="1"
+        android:background="#00000000"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        android:textColor="#000"
+        android:textColorHint="#A2A2A2"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="48dp"
+        android:src="@drawable/ic_eye"
+        app:layout_constraintBottom_toBottomOf="@+id/edPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edPassword"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:background="#acacac"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edPassword" />
+
+    <com.visionet.indigo_waterlevel.basecustomfonts.MyTextView_Roboto_Medium
+        android:id="@+id/btnSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="128dp"
+        android:background="@drawable/signin_rect"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:paddingLeft="90dp"
+        android:paddingTop="12dp"
+        android:paddingRight="90dp"
+        android:paddingBottom="12dp"
+        android:text="@string/btn_sign_in"
+        android:textColor="#ffffff"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.visionet.indigo_waterlevel.basecustomfonts.MyTextView_Roboto_Medium
+        android:id="@+id/btnSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/signin_rect"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:paddingLeft="90dp"
+        android:paddingTop="12dp"
+        android:paddingRight="90dp"
+        android:paddingBottom="12dp"
+        android:text="@string/btn_sign_up"
+        android:textColor="#ffffff"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignIn"
+        android:visibility="gone"
+        android:animateLayoutChanges="true"/>
+
+    <com.visionet.indigo_waterlevel.basecustomfonts.MyTextView_Roboto_Regular
+        android:id="@+id/tvForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="48dp"
+        android:text="@string/forgot_password"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <com.visionet.indigo_waterlevel.basecustomfonts.MyTextView_Roboto_Regular
+        android:id="@+id/tvNoAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/no_account"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSignUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignIn"
+        android:animateLayoutChanges="true" />
+
+    <android.support.constraint.Group
+        android:id="@+id/group2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:constraint_referenced_ids="edUsername,imageView3,view2,edPassword,imageView,view" />
+
+</android.support.constraint.ConstraintLayout>

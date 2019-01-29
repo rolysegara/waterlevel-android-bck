@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_reser_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/reset_all"
+            android:textColor="#030303"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/filter"
+            android:textColor="#191919"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ic_close"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_close_black" />
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:text="@string/coverage"
+                    android:textColor="#7F7F7F"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/search_field_grey_1"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp">
+
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true">
+
+                    </android.support.v7.widget.AppCompatSpinner>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/select_area"
+                        android:textColor="#CBCBCB" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:text="@string/status_filter"
+                    android:textColor="#7F7F7F"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="8dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/search_field_grey_1"
+                            android:text="Aman"
+                            android:textColor="#B2B2B2"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/search_field_grey_1"
+                            android:text="Normal"
+                            android:textColor="#B2B2B2"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/search_field_grey_1"
+                            android:text="Siaga"
+                            android:textColor="#B2B2B2"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="8dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/search_field_grey_1"
+                            android:text="Waspada"
+                            android:textColor="#B2B2B2"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/search_field_grey_1"
+                            android:text="Awas"
+                            android:textColor="#B2B2B2"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/search_field_grey_1"
+                            android:text="Bahaya"
+                            android:textColor="#B2B2B2"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:text="@string/distance"
+                    android:textColor="#7F7F7F"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="0dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp">
+
+                        <TextView
+                            android:id="@+id/textMax"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="200"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginEnd="10dp"
+                            android:textSize="16dp"
+                            android:textColor="#000" />
+
+                        <TextView
+                            android:id="@+id/textMin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="100"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginStart="10dp"
+                            android:textSize="16dp"
+                            android:textColor="#000"
+                            android:layout_alignParentRight="true"/>
+
+                        <com.crystal.crystalrangeseekbar.widgets.CrystalSeekbar
+                            android:id="@+id/rangeSeekbarDistance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:min_value="0"
+                            app:max_value="1000"
+                            app:steps="20"
+                            app:bar_color="#ECECEC"
+                            app:bar_highlight_color="#9d9d9d"
+                            app:left_thumb_image="@drawable/ic_thumb_seekbar_1"
+                            app:left_thumb_image_pressed="@drawable/ic_thumb_seekbar_2"
+                            app:data_type="_integer"
+                            android:layout_marginTop="16dp"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

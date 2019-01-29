@@ -1,0 +1,846 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:card_view="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_level"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+            android:background="#e9f7fd">
+
+            <me.itangqi.waveloadingview.WaveLoadingView
+                android:id="@+id/waveView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="110dp"
+                app:wlv_borderColor="#A1E3F5"
+                app:wlv_borderWidth="0dp"
+                app:wlv_progressValue="90"
+                app:wlv_round_rectangle="false"
+                app:wlv_shapeType="rectangle"
+                app:wlv_titleCenter="Center Title"
+                app:wlv_titleCenterColor="@android:color/white"
+                app:wlv_titleCenterSize="30sp"
+                app:wlv_titleCenterStrokeColor="#A1E3F5"
+                app:wlv_titleCenterStrokeWidth="2dp"
+                app:wlv_triangle_direction="north"
+                app:wlv_waveAmplitude="35"
+                app:wlv_waveColor="#A1E3F5" />
+
+            <!-- #9DD7EF -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="0dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/bg_gradient_radial_blue" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="0dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/bg_gradient_radial_blue" />
+
+                <TextView
+                    android:id="@+id/tv_date_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:padding="8dp"
+                    android:text="Lokasi"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_status"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_date_time"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/bg_status_green_gradient"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/bahaya"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tv_highest_minimum_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_status"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Max. Height:\n301 cm"
+                    android:textColor="#990000"
+                    android:textSize="12sp"
+                    android:textStyle="italic" />
+
+                <ImageView
+                    android:id="@+id/iv_measurement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tv_highest_minimum_level"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/ic_measurement" />
+
+                <LinearLayout
+                    android:id="@+id/ll_more_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/more_details"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_more_details"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_more_details" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:id="@+id/el_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FBFBFB"
+            app:ael_duration="1000"
+            app:ael_expanded="false"
+            app:ael_interpolator="decelerate"
+            app:ael_orientation="vertical">
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:animateLayoutChanges="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingTop="30dp"
+                    android:paddingBottom="48dp">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="8dp"
+                        card_view:cardCornerRadius="4dp"
+                        card_view:cardElevation="4dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp">
+
+                            <RelativeLayout
+                                android:id="@+id/rl_statistics"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:text="@string/statistics"
+                                    android:textColor="#343434"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/bt_statistics"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_arrow_down" />
+
+                            </RelativeLayout>
+
+                            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                                android:id="@+id/el_statistics"
+                                android:layout_width="match_parent"
+                                android:layout_height="350dp"
+                                android:layout_below="@+id/rl_statistics"
+                                android:paddingTop="8dp"
+                                app:ael_duration="400"
+                                app:ael_expanded="false"
+                                app:ael_interpolator="decelerate"
+                                app:ael_orientation="vertical">
+
+                                <include layout="@layout/toggle_report_layout" />
+
+                                <TextView
+                                    android:id="@+id/tv_date"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/ll_toggle_report"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:textColor="#FBA453"
+                                    android:textStyle="bold" />
+
+                                <HorizontalScrollView
+                                    android:id="@+id/hs_chart"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_above="@+id/ll_average"
+                                    android:layout_below="@+id/tv_date">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+                                        <com.github.mikephil.charting.charts.LineChart
+                                            android:id="@+id/chart_statistics"
+                                            android:layout_width="1000dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="0dp" />
+                                    </LinearLayout>
+                                </HorizontalScrollView>
+
+                                <LinearLayout
+                                    android:id="@+id/ll_average"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginTop="16dp"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_horizontal"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/average"
+                                            android:textColor="#0084AE"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/tv_average"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text=" 0 cm"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                            android:textColor="#0084AE"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:id="@+id/tv_date_2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/average"
+                                        android:textColor="#90C5D9"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="8dp"
+                        card_view:cardCornerRadius="4dp"
+                        card_view:cardElevation="4dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp">
+
+                            <RelativeLayout
+                                android:id="@+id/rl_reservoir_sensor"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:text="@string/reservoir_sensor"
+                                    android:textColor="#343434"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/bt_reservoir_sensor"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_arrow_down" />
+
+                            </RelativeLayout>
+
+                            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                                android:id="@+id/el_reservoir_sensor"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@+id/rl_reservoir_sensor"
+                                android:paddingTop="8dp"
+                                app:ael_duration="400"
+                                app:ael_expanded="false"
+                                app:ael_interpolator="decelerate"
+                                app:ael_orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/ll_header_list_sensor"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginTop="8dp"
+                                    android:background="@drawable/bg_toolbar_2"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="4"
+                                        android:gravity="center"
+                                        android:text="@string/sensor_name"
+                                        android:textColor="@color/white"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:gravity="center"
+                                        android:text="@string/level"
+                                        android:textColor="@color/white"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:gravity="center"
+                                        android:text="@string/status"
+                                        android:textColor="@color/white"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/empty_sensor"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true">
+
+                                    <include layout="@layout/empty_data_layout" />
+                                </LinearLayout>
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/rv_list_sensor"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/ll_header_list_sensor"
+                                    android:overScrollMode="never" />
+
+                            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="8dp"
+                        card_view:cardCornerRadius="4dp"
+                        card_view:cardElevation="4dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp">
+
+                            <RelativeLayout
+                                android:id="@+id/rl_additional_info"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:text="@string/additional_info"
+                                    android:textColor="#343434"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/bt_additional_info"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_arrow_down" />
+
+                            </RelativeLayout>
+
+                            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                                android:id="@+id/el_additional_info"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/rl_additional_info"
+                                android:paddingTop="8dp"
+                                app:ael_duration="400"
+                                app:ael_expanded="false"
+                                app:ael_interpolator="decelerate"
+                                app:ael_orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/ll_depth_volume"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="25dp"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/tv_depth_label"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/depth"
+                                            android:textColor="#4D4D4D"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/tv_depth"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="5dp"
+                                            android:text=""
+                                            android:textColor="#A6A6A6" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="25dp"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/tv_volume_label"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/volume"
+                                            android:textColor="#4D4D4D"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/tv_volume"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="5dp"
+                                            android:text=""
+                                            android:textColor="#A6A6A6" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/tv_area_name_label"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/ll_depth_volume"
+                                    android:layout_marginTop="16dp"
+                                    android:text="@string/area_name"
+                                    android:textColor="#4D4D4D"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tv_area_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tv_area_name_label"
+                                    android:layout_marginTop="5dp"
+                                    android:text=""
+                                    android:textColor="#A6A6A6" />
+
+                                <TextView
+                                    android:id="@+id/tv_address_label"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tv_area_name"
+                                    android:layout_marginTop="16dp"
+                                    android:text="@string/address"
+                                    android:textColor="#4D4D4D"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tv_address"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tv_address_label"
+                                    android:layout_marginTop="5dp"
+                                    android:text=""
+                                    android:textColor="#A6A6A6" />
+
+                                <TextView
+                                    android:id="@+id/tv_description_label"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tv_address"
+                                    android:layout_marginTop="16dp"
+                                    android:text="@string/description"
+                                    android:textColor="#4D4D4D"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tv_description"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tv_description_label"
+                                    android:layout_marginTop="5dp"
+                                    android:ellipsize="end"
+                                    android:maxLines="2"
+                                    android:text=""
+                                    android:textColor="#A6A6A6" />
+
+                                <Button
+                                    android:id="@+id/bt_view_map"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_below="@+id/tv_description"
+                                    android:layout_marginTop="16dp"
+                                    android:background="@drawable/selector_blue_grey"
+                                    android:text="@string/view_map"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold" />
+                            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="8dp"
+                        card_view:cardCornerRadius="4dp"
+                        card_view:cardElevation="4dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp">
+
+                            <RelativeLayout
+                                android:id="@+id/rl_gallery"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:text="@string/gallery"
+                                    android:textColor="#343434"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/bt_gallery"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_arrow_down" />
+
+                            </RelativeLayout>
+
+                            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                                android:id="@+id/el_gallery"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@+id/rl_gallery"
+                                android:paddingTop="8dp"
+                                app:ael_duration="400"
+                                app:ael_expanded="false"
+                                app:ael_interpolator="decelerate"
+                                app:ael_orientation="vertical">
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/rv_list_photo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp" />
+
+
+                                <LinearLayout
+                                    android:id="@+id/empty_photo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true">
+
+                                    <include layout="@layout/empty_data_layout" />
+                                </LinearLayout>
+                            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:visibility="gone"
+                        card_view:cardCornerRadius="4dp"
+                        card_view:cardElevation="4dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp">
+
+                            <RelativeLayout
+                                android:id="@+id/rl_tools"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:text="@string/tools"
+                                    android:textColor="#343434"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/bt_tools"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_arrow_down" />
+
+                            </RelativeLayout>
+
+                            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                                android:id="@+id/el_tools"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@+id/rl_tools"
+                                android:paddingTop="8dp"
+                                app:ael_duration="400"
+                                app:ael_expanded="false"
+                                app:ael_interpolator="decelerate"
+                                app:ael_orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Expandable Layout provides an easy way to create a view called header with an expandable view. Views are external layout to allow a maximum of customization." />
+                            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/bg_gradient_radial_blue" />
+
+            <LinearLayout
+                android:id="@+id/ll_close_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_close_details"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:paddingTop="20dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_close_details" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/see_height_level"
+                    android:textColor="#999999"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/el_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FBFBFB"
+            android:visibility="gone">
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/bt_map_layers"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="65dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/selector_ic_map_layers" />
+
+            <Button
+                android:id="@+id/bt_map_view_all"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/bt_map_layers"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/selector_ic_map_view_all" />
+
+            <Button
+                android:id="@+id/bt_map_direction_mode"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/bt_map_view_all"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ic_map_direction_walking_off" />
+
+            <Button
+                android:id="@+id/bt_map_navigation"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/selector_ic_map_navigation" />
+
+            <Button
+                android:id="@+id/bt_close_map"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="16dp"
+                android:background="@drawable/selector_blue_grey"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/close_map"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <include layout="@layout/item_detail_marker_reservoir" />
+
+    <include layout="@layout/item_detail_marker_reservoir_medium_density" />
+
+    <include layout="@layout/item_detail_marker_reservoir_low_density" />
+
+</android.support.design.widget.CoordinatorLayout>

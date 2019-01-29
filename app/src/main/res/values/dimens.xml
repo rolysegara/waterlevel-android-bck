@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="row_padding_vertical">10dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">42dp</dimen>
+    <dimen name="nav_header_height">200dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="profile_width">85dp</dimen>
+    <dimen name="profile_height">85dp</dimen>
+
+    <dimen name="report_daily_width">1000dp</dimen>
+    <dimen name="report_weekly_width">350dp</dimen>
+    <dimen name="report_monthly_width">1700dp</dimen>
+    <dimen name="report_yearly_width">700dp</dimen>
+</resources>

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.skyfishjy.ripplebackground:library-1.0.1">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-1.0.1.aar/a931c20a8efb55278ed457c6e7713892/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-1.0.1.aar/a931c20a8efb55278ed457c6e7713892/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.skyfishjy.ripplebackground/library/1.0.1/5dcc73905021c28c8bdf030c243f5d5543988e0e/library-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

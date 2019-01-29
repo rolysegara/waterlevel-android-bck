@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.aarsy.googlemapsanimations:googlemapsanimations-1.0.5">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/googlemapsanimations-1.0.5.aar/bbbc9a87b18034a1593a49d45e57d009/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/googlemapsanimations-1.0.5.aar/bbbc9a87b18034a1593a49d45e57d009/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.aarsy.googlemapsanimations/googlemapsanimations/1.0.5/6163a63dcd6ac0cd55ce7731bfd4df171bf06d76/googlemapsanimations-1.0.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

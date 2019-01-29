@@ -1,0 +1,205 @@
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation">
+    <string name="app_name">Water Level</string>
+    <string name="blue_name">blue</string>
+
+    <!-- Login Form -->
+    <string name="hint_username">Input username or email address</string>
+    <string name="hint_password">Input password</string>
+    <string name="btn_sign_in">Sign In</string>
+    <string name="error_invalid_email">Invalid email address</string>
+    <string name="error_blank">Can\'t be blank</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="no_account">I have no account yet</string>
+    <string name="have_account">I have account</string>
+    <string name="hello">Hello</string>
+    <string name="check_for_activate">please check your email to activate account</string>
+    <string name="registration_failed">Registration Failed</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="insert_email">Insert a valid email address</string>
+    <string name="ok">OK</string>
+    <string name="reset_password_confirmation">Will you send a code reset to this email:</string>
+    <string name="reset_password_sent_to_email">The activation code has been sent, please check your email.</string>
+    <string name="is_your_data_correct">Is your data correct?</string>
+
+    <!-- Registration -->
+    <string name="registration">Registration</string>
+    <string name="hint_reg_name">Name</string>
+    <string name="hint_reg_surname">Nickname</string>
+    <string name="hint_reg_username">Username</string>
+    <string name="hint_reg_email_address">Email address</string>
+    <string name="hint_reg_password">Password</string>
+    <string name="hint_reg_retype_password">Retype password</string>
+    <string name="hint_reg_captcha_response">Captcha response</string>
+    <string name="btn_sign_up">Sign Up</string>
+    <string name="password_not_same">Password 1 and Password 2 are not the same</string>
+
+    <!-- Dialog -->
+    <string name="information">Information</string>
+    <string name="error">Sorry</string>
+    <string name="connection_failed">Connection failed</string>
+    <string name="server_down">Sorry the server is down</string>
+    <string name="need_location_access">The application requires location access, will you activate it manually?</string>
+    <string name="yes_go_to_setting">Yes, go to settings</string>
+    <string name="deny">Deny</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_dashboard">DASHBOARD</string>
+    <string name="nav_profile">PROFILE</string>
+    <string name="nav_my_report">MY REPORT</string>
+    <string name="nav_help_center">HELP CENTER</string>
+    <string name="nav_settings">SETTINGS</string>
+    <string name="nav_logout">LOGOUT</string>
+    <string name="activity_title_about_us">About Us</string>
+    <string name="activity_title_privacy_policy">Privacy Policy</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
+    <string name="title_map">Location</string>
+    <string name="title_list_reservoir">Reservoir</string>
+    <string name="title_report">Report</string>
+
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+    <string name="action_clear_all">Clear All</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_mark_all_read">Mark All as Read</string>
+    <string name="action_refresh_location">Refresh Location</string>
+    <string name="update_now">Update Now</string>
+    <string name="sure_to_logout">Are you sure you want to log out?</string>
+
+    <string name="all">All</string>
+    <string name="watched">Watched</string>
+
+    <string name="report">Report</string>
+
+    <string name="nearest">NEAREST</string>
+    <string name="others">OTHERS</string>
+    <string name="result">RESULTS</string>
+    <string name="from_your_location">From your location</string>
+    <string name="pump">Pump</string>
+    <string name="off">OFF</string>
+    <string name="aman">Aman</string>
+    <string name="siaga">Siaga</string>
+    <string name="awas">Awas</string>
+    <string name="bahaya">Bahaya</string>
+
+    <string name="more_details">More Details</string>
+    <string name="see_height_level">See Height Level</string>
+
+    <string name="no_description">No description</string>
+    <string name="not_available">Not Available</string>
+    
+    <string name="statistics">STATISTICS</string>
+    <string name="reservoir_sensor">RESERVOIR SENSOR</string>
+    <string name="additional_info">ADDITIONAL INFO</string>
+    <string name="gallery">GALLERY</string>
+    <string name="tools">TOOLS</string>
+
+    <string name="day">Day</string>
+    <string name="week">Week</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+
+    <string name="cancel">Cancel</string>
+
+    <string name="average">Avg</string>
+    
+    <string name="sensor_name">Sensor Name</string>
+    <string name="level">Level</string>
+    <string name="status">Status</string>
+
+    <string name="no_sensor">The reservoir has no sensors</string>
+    <string name="no_photos">The reservoir has no photos</string>
+    
+    <string name="depth">Depth:</string>
+    <string name="volume">Volume:</string>
+    <string name="area_name">Area Name:</string>
+    <string name="address">Address:</string>
+    <string name="description">Description:</string>
+    <string name="read_more">read more</string>
+
+    <string name="view_map">VIEW MAP</string>
+    <string name="close_map">CLOSE MAP</string>
+    <string name="download_report">DOWNLOAD REPORT</string>
+    <string name="daily_report">DAILY REPORT</string>
+    <string name="status_info">Status Info</string>
+
+    <string name="dialog_watched">Watched!</string>
+    <string name="dialog_unwatched">Unwatched!</string>
+    <string name="see_all">See All</string>
+    <string name="go_back">Go Back</string>
+
+    <string name="no_data_found">No data found</string>
+    <string name="today">Today</string>
+    <string name="last_updated">last updated</string>
+
+    <string name="map_type_default">Default</string>
+    <string name="map_type_hybrid">Hybrid</string>
+    <string name="map_type_satellite">Satellite</string>
+    <string name="map_type_terrain">Terrain</string>
+    <string name="map_type">Map Type</string>
+    <string name="map_detail">Map Details</string>
+    <string name="map_traffic_light">Traffic Light</string>
+    
+    <string name="my_location">My Location</string>
+    <string name="reservoir_officer">Reservoir Officer</string>
+    <string name="google_maps_not_installed">Google Maps Not Installed. Install first.</string>
+    <string name="map_navigation">Map Navigation</string>
+    <string name="allow_open_navigation">Do you allow the application to open google maps to navigate?</string>
+
+    <!-- Profile -->
+    <string name="change_photo">Change Photo</string>
+    <string name="info">Info</string>
+    <string name="chabge_password">Change Password</string>
+    <string name="email_address">Email Address</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="retype_password">Re-type Password</string>
+    <string name="save">Save</string>
+    <string name="change_password">change the password</string>
+    <string name="update_photo">update the photo</string>
+    <string name="ask_update_profile">Are you sure you will </string>
+    <string name="and">and</string>
+    <string name="no_data_change">No data changes.</string>
+    <string name="change_password_success">Change password success, please login again!</string>
+    <string name="change_password_failed">Sorry, changing the password failed.</string>
+    <string name="capture_photo">Capture Photo</string>
+    <string name="gallery_take_image">Gallery</string>
+
+    <!-- Filter -->
+    <string name="reset_all">Reset All</string>
+    <string name="filter">FILTER</string>
+    <string name="coverage">COVERAGE</string>
+    <string name="status_filter">STATUS</string>
+    <string name="distance">DISTANCE</string>
+    <string name="water_level">WATER LEVEL</string>
+    <string name="apply">APPLY</string>
+    <string name="select_area">Select Area</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Map</item>
+        <item>Profile</item>
+        <item>My Report</item>
+        <item>Help Center</item>
+        <item>Settings</item>
+    </string-array>
+
+    <string-array name="bottom_nav_item_activity_titles">
+        <item>Store</item>
+        <item>Gifts</item>
+        <item>Cart</item>
+        <item>Profile</item>
+    </string-array>
+
+    <string-array name="toggle_statistics_report">
+        <item>Day</item>
+        <item>Week</item>
+        <item>Month</item>
+        <item>Year</item>
+    </string-array>
+
+</resources>

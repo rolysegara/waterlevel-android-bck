@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_map"
+        android:icon="@drawable/selector_bottom_nav_map"
+        android:title="@string/title_map"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/navigation_list_reservoir"
+        android:icon="@drawable/selector_bottom_nav_list_reservoir"
+        android:title="@string/title_list_reservoir"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/navigation_report"
+        android:icon="@drawable/selector_bottom_nav_report"
+        android:title="@string/title_report"
+        app:showAsAction="ifRoom" />
+
+</menu>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/image"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:scaleType="fitXY"
+            app:riv_corner_radius_top_right="6dp"
+            app:riv_corner_radius_bottom_right="6dp"
+            app:riv_corner_radius_bottom_left="6dp"
+            app:riv_corner_radius_top_left="6dp"
+            app:riv_oval="false"
+            android:transitionName="@string/blue_name"/>
+
+        <com.skyfishjy.library.RippleBackground
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.85"
+            android:id="@+id/content"
+            app:rb_color="#66F44336"
+            app:rb_radius="20dp"
+            app:rb_rippleAmount="4"
+            app:rb_duration="3000"
+            app:rb_scale="6"
+            android:layout_marginLeft="7dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rlItem"
+                android:layout_marginLeft="8dp">
+                <TextView
+                    android:id="@+id/textViewNamaSensor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textColor="@color/title"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:text="AAA"/>
+
+                <TextView
+                    android:id="@+id/textViewLokasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewNamaSensor"
+                    android:text="bbb"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/textViewOptions"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/textViewStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/year"
+                        android:text="cccc"/>
+
+                    <ImageView
+                        android:id="@+id/imageWarning"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:scaleType="fitCenter"
+                        android:src="@mipmap/ic_danger"
+                        android:layout_marginLeft="5dp"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textViewKetinggianAir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_status"
+                    android:layout_toLeftOf="@+id/textViewOptions"
+                    android:text="bbb"/>
+
+                <TextView
+                    android:id="@+id/textViewOptions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:text="&#8942;"
+                    android:textColor="@color/year"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    />
+
+            </RelativeLayout>
+
+        </com.skyfishjy.library.RippleBackground>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.15" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:layout_weight="0.85"
+            android:background="#cccccc"
+            android:layout_below="@+id/textViewKetinggianAir"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"/>
+    </LinearLayout>
+
+</LinearLayout>

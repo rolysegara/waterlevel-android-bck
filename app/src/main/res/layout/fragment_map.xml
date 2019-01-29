@@ -1,0 +1,120 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nsv_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.visionet.indigo_waterlevel.basecomponentutils.googlemap.markerinfowindow.MapWrapperLayout
+                    android:id="@+id/map_relative_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <fragment
+                        android:id="@+id/map"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp" />
+
+                </com.visionet.indigo_waterlevel.basecomponentutils.googlemap.markerinfowindow.MapWrapperLayout>
+
+
+                <ImageView
+                    android:id="@+id/iv_transparent_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@android:color/transparent" />
+
+                <Button
+                    android:id="@+id/bt_map_layers"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="130dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/selector_ic_map_layers" />
+
+                <Button
+                    android:id="@+id/bt_map_view_all"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/bt_map_layers"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/selector_ic_map_view_all" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="20dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/bg_gradient_radial_blue" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_search"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:orientation="vertical"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="20dp">
+
+                        <include layout="@layout/search_location_layout_white" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt_map"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/ll_search"
+                        android:gravity="center"
+                        android:text="MAP"
+                        android:textSize="22dp"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="50dp">
+
+        <include layout="@layout/item_detail_marker_reservoir" />
+
+        <include layout="@layout/item_detail_marker_reservoir_medium_density" />
+
+        <include layout="@layout/item_detail_marker_reservoir_low_density" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</android.support.design.widget.CoordinatorLayout>

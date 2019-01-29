@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_item_show_location"
+        android:icon="@mipmap/ic_detail"
+        android:title="Show Location"
+        myapp:showAsAction="never" />
+    <item android:id="@+id/menu_item_show_detail"
+        android:icon="@mipmap/ic_detail"
+        android:title="Show Detail"
+        myapp:showAsAction="never" />
+    <item android:id="@+id/menu_item_show_report"
+        android:icon="@mipmap/ic_report"
+        android:title="Show Report"
+        myapp:showAsAction="never" />
+</menu>

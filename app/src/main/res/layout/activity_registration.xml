@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.visionet.indigo_waterlevel.basecustomfonts.MyTextView_Roboto_Bold
+        android:id="@+id/tvRegistration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:text="@string/registration"
+        android:textColor="#b7b8ba"
+        android:textSize="16dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="8dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="8dp">
+                    <com.visionet.indigo_waterlevel.basecustomfonts.EditText_Roboto_Regular
+                        android:id="@+id/edName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:hint="@string/hint_reg_name"
+                        android:inputType="text"
+                        android:textColor="#000"
+                        android:layout_marginBottom="5dp"
+                        android:textColorHint="#A2A2A2"
+                        android:textSize="12dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#acacac" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/ivName"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="48dp"
+                    app:ico_color="@color/lightGrey"
+                    app:ico_icon="faw-user"
+                    app:ico_size="14dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="8dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="8dp">
+                    <com.visionet.indigo_waterlevel.basecustomfonts.EditText_Roboto_Regular
+                        android:id="@+id/edSurname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:hint="@string/hint_reg_surname"
+                        android:inputType="text"
+                        android:textColor="#000"
+                        android:layout_marginBottom="5dp"
+                        android:textColorHint="#A2A2A2"
+                        android:textSize="12dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#acacac" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/ivNickname"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="48dp"
+                    app:ico_color="@color/lightGrey"
+                    app:ico_icon="faw-user-tie"
+                    app:ico_size="14dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="8dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="8dp">
+                    <com.visionet.indigo_waterlevel.basecustomfonts.EditText_Roboto_Regular
+                        android:id="@+id/edUsername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:hint="@string/hint_reg_username"
+                        android:inputType="text"
+                        android:textColor="#000"
+                        android:layout_marginBottom="5dp"
+                        android:textColorHint="#A2A2A2"
+                        android:textSize="12dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#acacac" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/ivUsername"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="48dp"
+                    app:ico_color="@color/lightGrey"
+                    app:ico_icon="faw-user-tag"
+                    app:ico_size="14dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="8dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="8dp">
+                    <com.visionet.indigo_waterlevel.basecustomfonts.EditText_Roboto_Regular
+                        android:id="@+id/edEmailAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:hint="@string/hint_reg_email_address"
+                        android:inputType="textEmailAddress"
+                        android:textColor="#000"
+                        android:layout_marginBottom="5dp"
+                        android:textColorHint="#A2A2A2"
+                        android:textSize="12dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#acacac" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/ivEmailAddress"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="48dp"
+                    app:ico_color="@color/lightGrey"
+                    app:ico_icon="faw-envelope"
+                    app:ico_size="14dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="8dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="8dp">
+                    <com.visionet.indigo_waterlevel.basecustomfonts.EditText_Roboto_Regular
+                        android:id="@+id/edPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:hint="@string/hint_reg_password"
+                        android:inputType="textPassword"
+                        android:textColor="#000"
+                        android:layout_marginBottom="5dp"
+                        android:textColorHint="#A2A2A2"
+                        android:textSize="12dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#acacac" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/ivPassword"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="48dp"
+                    app:ico_color="@color/lightGrey"
+                    app:ico_icon="faw-key"
+                    app:ico_size="14dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="8dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="8dp">
+                    <com.visionet.indigo_waterlevel.basecustomfonts.EditText_Roboto_Regular
+                        android:id="@+id/edPassword2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:hint="@string/hint_reg_retype_password"
+                        android:inputType="textPassword"
+                        android:textColor="#000"
+                        android:layout_marginBottom="5dp"
+                        android:textColorHint="#A2A2A2"
+                        android:textSize="12dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#acacac" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/ivPassword2"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="48dp"
+                    app:ico_color="@color/lightGrey"
+                    app:ico_icon="faw-key"
+                    app:ico_size="14dp" />
+            </LinearLayout>
+
+            <com.visionet.indigo_waterlevel.basecustomfonts.MyTextView_Roboto_Medium
+                android:id="@+id/btnSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="96dp"
+                android:layout_marginEnd="64dp"
+                android:layout_marginStart="64dp"
+                android:background="@drawable/signin_rect"
+                android:clickable="true"
+                android:paddingBottom="12dp"
+                android:paddingLeft="64dp"
+                android:paddingRight="64dp"
+                android:paddingTop="12dp"
+                android:text="@string/btn_sign_up"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
